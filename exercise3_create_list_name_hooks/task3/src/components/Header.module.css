@@ -1,0 +1,7 @@
+.header {
+  margin: 0;
+  padding: 5px;
+  box-shadow: 13px 31px 32px -13px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 13px 31px 32px -13px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 13px 31px 32px -13px rgba(0, 0, 0, 0.3);
+}
