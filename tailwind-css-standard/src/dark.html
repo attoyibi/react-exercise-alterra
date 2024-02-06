@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Tailwind Exploration</title>
+</head>
+
+<body class="dark:bg-slate-800 dark:text-white">
+    <div class="font-montserrat">
+        <div class="text-center mt-10">
+            <h1 class="text-4xl font-bold text-slate-700 dark:text-white">MyWebsite</h1>
+
+            <div class="mt-4">
+                <label for="toggle">
+                    Enable dark mode
+                    <input type="checkbox" name="toggle" id="toggle">
+                </label>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap gap-2 justify-center mt-10">
+            <div class="bg-red-500 p-4 rounded-lg text-white dark:bg-white dark:text-slate-800">About Us</div>
+            <div class="bg-blue-500 p-4 rounded-lg text-white dark:bg-white dark:text-slate-800">Our Services</div>
+            <div class="bg-green-500 p-4 rounded-lg text-white dark:bg-white dark:text-slate-800">Contact Us</div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <h2 class="text-3xl dark:text-white">Welcome to MyWebsite</h2>
+            <p class="text-md dark:text-white">Explore our Services</p>
+        </div>
+
+        <div class="flex flex-wrap gap-2 justify-center ">
+            <div class="container p-4 mt-10 rounded-lg shadow-lg mx-4 w-64 mb-4 dark:border-2 dark:border-white">
+                <img class="rounded-lg mx-auto mt-4" src="https://source.unsplash.com/600x400?computer" alt="image">
+                <h3 class="text-2xl text-slate-700 text-center dark:text-white">Web Development</h3>
+                <p class="text-md text-slate-500 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Beatae nobis
+                    unde ipsa architecto provident
+                    consequatur quidem rem in facilis voluptate.</p>
+            </div>
+            <div class="container p-4 mt-10 rounded-lg shadow-lg mx-4 w-64 mb-4 dark:border-2 dark:border-white">
+                <img class="rounded-lg mx-auto mt-4" src="https://source.unsplash.com/600x400?mobile" alt="image">
+                <h3 class="text-2xl text-slate-700 text-center dark:text-white">Mobile Development</h3>
+                <p class="text-md text-slate-500 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Beatae nobis
+                    unde ipsa architecto provident
+                    consequatur quidem rem in facilis voluptate.</p>
+            </div>
+            <div class="container p-4 mt-10 rounded-lg shadow-lg mx-4 w-64 mb-4 dark:border-2 dark:border-white">
+                <img class="rounded-lg mx-auto mt-4" src="https://source.unsplash.com/600x400?network" alt="image">
+                <h3 class="text-2xl text-slate-700 text-center dark:text-white">Network Solutions</h3>
+                <p class="text-md text-slate-500 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Beatae nobis
+                    unde ipsa architecto provident
+                    consequatur quidem rem in facilis voluptate.</p>
+            </div>
+            <div class="container p-4 mt-10 rounded-lg shadow-lg mx-4 w-64 mb-4 dark:border-2 dark:border-white">
+                <img class="rounded-lg mx-auto mt-4" src="https://source.unsplash.com/600x400?office" alt="image">
+                <h3 class="text-2xl text-slate-700 text-center dark:text-white">Data Solutions</h3>
+                <p class="text-md text-slate-500 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Beatae nobis
+                    unde ipsa architecto provident
+                    consequatur quidem rem in facilis voluptate.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggle = document.getElementById("toggle");
+        const htmlPage = document.querySelector("html");
+
+        toggle.addEventListener("click", () => {
+            toggle.checked ? htmlPage.classList.add("dark") : htmlPage.classList.remove("dark");
+        })
+    </script>
+</body>
+
+</html>
