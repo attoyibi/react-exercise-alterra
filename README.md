@@ -25,7 +25,7 @@ Repository ini berisi berbagai contoh project yang dikembangkan dengan ReactJS. 
 2. Pilih project yang akan dicoba. Sebagai contoh project `exercise5_create_book_form` dipilih.
 
 ```sh
-cd `exercise5_create_book_form`
+cd exercise5_create_book_form
 ```
 
 3. Lakukan instalasi dependensi.
