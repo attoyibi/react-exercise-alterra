@@ -1,4 +1,3 @@
-// Komponen Register
 import React, { useState } from "react";
 import axios from "../utils/apiRequest";
 import { useNavigate } from "react-router-dom";
@@ -8,28 +7,21 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
   const navigate = useNavigate(); // Use the navigate function to navigate programmatically
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       const response = await axios.post("/register", { username, password });
-      // Menyimpan token ke localStorage
-      // localStorage.setItem("token", response.data.token);
-      // Alert user and redirect ke dashboard
       alert("Registrasi sukses! Anda akan dialihkan.");
       navigate("/login");
     } catch (error) {
-      // Menangani error
-      console.error("Registration failed: ", error);
+      console.error(error);
     }
   };
-
   const toggleShowPassword = () => {
     setShowPassword(!showPassword);
   };
-
   return (
-    <>
+    <div>
       <h1>Register</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Username:</label>
@@ -56,7 +48,7 @@ const Register = () => {
         <br />
         <button type="submit">Register</button>
       </form>
-    </>
+    </div>
   );
 };
 
