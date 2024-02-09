@@ -1,0 +1,14 @@
+{
+  "name": "tailwind-css-standard",
+  "version": "1.0.0",
+  "description": "Basic Tailwind usage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nadir Basalamah",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

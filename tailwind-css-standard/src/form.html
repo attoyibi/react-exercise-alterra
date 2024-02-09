@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mt-10 mx-auto bg-white p-8 rounded shadow-lg w-96">
+        <h2 class="text-2xl font-semibold mb-4">Registration Form</h2>
+        <p class="text-md mb-4">Please fill this form to create a new account</p>
+        <form>
+            <div class="mb-4">
+                <label for="username" class="text-gray-600 block text-sm font-medium mb-2">Username</label>
+                <input class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" type="text"
+                    name="username" id="username" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="email" class="text-gray-600 block text-sm font-medium mb-2">Email</label>
+                <input
+                    class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700"
+                    type="email" name="email" id="email" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="text-gray-600 block text-sm font-medium mb-2">Password</label>
+                <input class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                    type="password" name="password" id="password" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="hobby" class="text-gray-600 block text-sm font-medium mb-2">Hobby</label>
+                <select class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" name="hobby"
+                    id="hobby">
+                    <option value="reading">Reading</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="coding">Coding</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <button
+                    class="w-full px-3 py-2 rounded-md bg-blue-200 text-slate-700 hover:bg-blue-600 hover:text-white focus:outline-none active:bg-blue-800"
+                    type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
