@@ -13,10 +13,14 @@ Repository ini berisi berbagai contoh project yang dikembangkan dengan ReactJS. 
 | `exercise6_0_create_list_name_redux` | Penggunaan Redux                                                                 |
 | `exercise6_1_redux_toolkit`          | Penggunaan Redux Toolkit                                                         |
 | `exercise7_testing`                  | Testing aplikasi React                                                           |
+| `exercise8_event_handling`           | Penggunaan Event Handling di React                                               |
+| `exercise9_react_hook`               | Penggunaan React Hooks                                                           |
+| `exercise10_restful_api`             | Penggunaan RESTful API di React                                                  |
 | `react-form-chakra`                  | Pembuatan Form dengan Chakra UI                                                  |
 | `react-menu-fundamentals`            | Aplikasi React sederhana yang dibuat dengan Vite, state dan functional component |
 | `tailwind-css-react`                 | Contoh penggunaan Tailwind CSS di React                                          |
 | `tailwind-css-standard`              | Contoh penggunaan Tailwind CSS                                                   |
+| `vite-react-app`                     | Aplikasi React sederhana yang dibuat dengan Vite                                 |
 
 ## Cara Penggunaan
 
