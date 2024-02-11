@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-item {
+        @apply p-4 rounded-lg text-white;
+    }
+
+    .card-item {
+        @apply container p-4 mt-10 rounded-lg shadow-lg mx-4 w-64 mb-4;
+    }
+
+    .card-img {
+        @apply rounded-lg mx-auto mt-4;
+    }
+}
